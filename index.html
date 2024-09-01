@@ -23,7 +23,7 @@
       var html = template(context);
 
       // Oluşturulan HTML'i sayfanızda bir öğeye yerleştirin
-      document.body.innerHTML = templateScript(html);
+      document.body.innerHTML = html;
     })
     .catch((error) => {
       console.error("Bir hata oluştu:", error);
