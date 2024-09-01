@@ -1,23 +1,20 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var source = document.getElementById("template").innerHTML;
-    var template = Handlebars.compile(source);
+  document.addEventListener('DOMContentLoaded', () => {
+  let script1 = document.querySelector('#handlebars1').innerHTML;
 
-    var context = {
-      title: "My DocBrowser"
-    };
+  let obj = {
+    "title": "<h2>Hello</h2>",
+  };
 
-    var html = template(context);
-    document.open();
-    document.write(html);
-    document.close();
-  });
+  let templateScript = Handlebars.compile(script1); // returns a function
+  document.body.innerHTML = templateScript(obj);
+});
 </script>
 
 
-<script id="template" type="text/x-handlebars-template">
+<script id="template" type="text/x-handlebars">
     <!DOCTYPE html>
     <html>
     <head>
