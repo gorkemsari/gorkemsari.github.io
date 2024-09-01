@@ -2,32 +2,32 @@
 
 <script>
   // fetch ile şablon dosyasını yükleyin
-  fetch("/layout.hbs")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Şablon dosyası yüklenemedi: " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((templateSource) => {
-      // Şablonu Handlebars ile derleyin
-      var template = Handlebars.compile(templateSource);
+  //   fetch("/layout.hbs")
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error("Şablon dosyası yüklenemedi: " + response.statusText);
+  //       }
+  //       return response.text();
+  //     })
+  //     .then((templateSource) => {
+  //       // Şablonu Handlebars ile derleyin
+  //       var template = Handlebars.compile(templateSource);
 
-      // Verilerinizi buraya ekleyin
-      var context = {
-        title: "My DocBrowser",
-        content: "<p>Welcome to the DocBrowser!</p>",
-      };
+  //       // Verilerinizi buraya ekleyin
+  //       var context = {
+  //         title: "My DocBrowser",
+  //         content: "<p>Welcome to the DocBrowser!</p>",
+  //       };
 
-      // Derlenmiş şablon ve verilerle HTML'i oluşturun
-      var html = template(context);
+  //       // Derlenmiş şablon ve verilerle HTML'i oluşturun
+  //       var html = template(context);
 
-      // Oluşturulan HTML'i sayfanızda bir öğeye yerleştirin
-      document.documentElement.innerHTML = html;
-    })
-    .catch((error) => {
-      console.error("Bir hata oluştu:", error);
-    });
+  //       // Oluşturulan HTML'i sayfanızda bir öğeye yerleştirin
+  //       document.documentElement.innerHTML = html;
+  //     })
+  //     .catch((error) => {
+  //       console.error("Bir hata oluştu:", error);
+  //     });
 
   //   document.addEventListener("DOMContentLoaded", () => {
   //     let script1 = document.querySelector("#template").innerHTML;
