@@ -2,7 +2,7 @@
 
 <script>
   // fetch ile şablon dosyasını yükleyin
-  fetch("/layout.hbs.hbs")
+  fetch("/layout.hbs")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Şablon dosyası yüklenemedi: " + response.statusText);
