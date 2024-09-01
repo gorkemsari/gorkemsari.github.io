@@ -5,6 +5,7 @@ author: opengroup.org
 category: Jekyll
 layout: default
 nav_order: 1
+has_children: true
 ---
 
 # TOGAF

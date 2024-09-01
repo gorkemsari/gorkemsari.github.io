@@ -73,7 +73,11 @@ plugins:
   - jekyll-readme-index
   - jemoji
 
-nav:
+# Gitbook theme settings
+theme: jekyll-gitbook
+
+# Navigation settings
+navigation:
   - title: TOGAF
     url: /togaf/
     children:
@@ -81,7 +85,7 @@ nav:
         url: /togaf/introduction/
         children:
           - title: Page Intro
-            url: /togaf/introduction/1.introduction.md
+            url: /togaf/introduction/pageintro.md
           - title: Page Intro 1
             url: /togaf/introduction/pageintro1.md
           - title: Page Intro 2
@@ -90,7 +94,7 @@ nav:
         url: /togaf/adm/
         children:
           - title: Page ADM
-            url: /togaf/adm/1.introduction.md
+            url: /togaf/adm/pageadm.md
           - title: Page ADM 1
             url: /togaf/adm/pageadm1.md
           - title: Page ADM 2

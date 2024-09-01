@@ -6,6 +6,7 @@ category: Jekyll
 layout: default
 nav_order: 2
 parent: TOGAF
+has_children: true
 ---
 
 # ADM
