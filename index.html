@@ -6,6 +6,7 @@
 
   let obj = {
     "title": "<h2>Hello</h2>",
+    "body": "test"
   };
 
   let templateScript = Handlebars.compile(script1); // returns a function
@@ -30,7 +31,7 @@
         <script src="/docbrowser/db-script.min.js"></script>
         -->
     
-        <link rel="stylesheet" href="/db-customize.css" />
+        <!-- <link rel="stylesheet" href="/db-customize.css" /> -->
         <meta name="viewport" content="initial-scale=1">
         
         <!-- Include other prism below as required -->
@@ -192,7 +193,7 @@
                     These headings will also automatically get an anchor
                     link icon that appears when the user hovers over the heading.
                     -->
-                    <!-- {{body}} -->
+                    {{body}}
                 </article>
     
             </div>
