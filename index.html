@@ -1,0 +1,18 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var source = document.getElementById("template").innerHTML;
+    var template = Handlebars.compile(source);
+
+    var context = {
+      title: "My DocBrowser",
+      body: "<p>Welcome to the DocBrowser!</p>",
+    };
+
+    var html = template(context);
+    document.open();
+    document.write(html);
+    document.close();
+  });
+</script>
