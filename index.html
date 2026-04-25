@@ -1,43 +1,98 @@
-<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
-  // fetch ile şablon dosyasını yükleyin
-  //   fetch("/layout.hbs")
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw new Error("Şablon dosyası yüklenemedi: " + response.statusText);
-  //       }
-  //       return response.text();
-  //     })
-  //     .then((templateSource) => {
-  //       // Şablonu Handlebars ile derleyin
-  //       var template = Handlebars.compile(templateSource);
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görkem Sarı | Software Architecture</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      /* GitHub Dark Background */
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
 
-  //       // Verilerinizi buraya ekleyin
-  //       var context = {
-  //         title: "My DocBrowser",
-  //         content: "<p>Welcome to the DocBrowser!</p>",
-  //       };
+    h1 {
+      color: #58a6ff;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-  //       // Derlenmiş şablon ve verilerle HTML'i oluşturun
-  //       var html = template(context);
+    p {
+      font-size: 1.2rem;
+      color: #8b949e;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
 
-  //       // Oluşturulan HTML'i sayfanızda bir öğeye yerleştirin
-  //       document.documentElement.innerHTML = html;
-  //     })
-  //     .catch((error) => {
-  //       console.error("Bir hata oluştu:", error);
-  //     });
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 24px;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+      transition: border-color 0.3s;
+    }
 
-  //   document.addEventListener("DOMContentLoaded", () => {
-  //     let script1 = document.querySelector("#template").innerHTML;
+    .card:hover {
+      border-color: #58a6ff;
+    }
 
-  //     let obj = {
-  //       title: "<h2>Hello</h2>",
-  //       body: "test",
-  //     };
+    .card h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.2rem;
+      color: #f0f6fc;
+    }
 
-  //     let templateScript = Handlebars.compile(script1); // returns a function
-  //     document.body.innerHTML = templateScript(obj);
-  //   });
-</script>
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #238636;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #2ea043;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Görkem Sarı</h1>
+  <p>Principal Architect | Software Engineering & Distributed Systems</p>
+
+  <a href="/distributed-systems/">
+    <div class="card">
+      <h2>Distributed Systems Handbook 📚</h2>
+      <p>A comprehensive, pragmatic guide on designing, scaling, and maintaining distributed architectures.</p>
+      <span class="btn">Read the Guide</span>
+    </div>
+  </a>
+
+</body>
+
+</html>
